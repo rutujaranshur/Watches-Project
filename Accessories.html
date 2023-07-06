@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive Accessories</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Dancing+Script:wght@400;500;600&family=Montserrat:ital,wght@0,500;0,600;0,800;1,500;1,600;1,700&
+family=Paytone+One&family=Poppins:ital,wght@0,400;0,500;0,700;0,800;0,900;1,700;1,800&family=Sriracha&display=swap" rel="stylesheet">
+
+
+    <style>
+         :root {
+            --bodyback: #faf5f6;
+            --textcolor: #1b2741;
+            --sectionback: #f7f6f6;
+        }
+        
+        .navbar {
+            margin: 30px;
+        }
+        
+        .navbar a {
+            margin: 30px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #000;
+        }
+        
+        .navbar a:hover {
+            color: rgb(60, 58, 58);
+            font-size: 23px;
+        }
+        
+        .navbar-icons a {
+            margin: 30px;
+            font-size: 20px;
+            color: #000;
+            text-transform: uppercase;
+        }
+        
+        .navbar-icons a:hover {
+            color: rgb(60, 58, 58);
+            font-size: 23px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        body {
+            min-height: 70;
+            display: grid;
+        }
+        
+        .container {
+            width: 80vw;
+            display: flex;
+            height: 50vh;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-right: 50px;
+            margin-left: 120px;
+        }
+        
+        .header {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 4em;
+            text-transform: uppercase;
+            color: var(--textcolor);
+            align-content: center;
+            text-align: center;
+        }
+        
+        .accessories {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding-top: 100px;
+        }
+        
+        .accessories2 {
+            position: relative;
+            background-color: var(--sectionback);
+            width: 350px;
+            height: 100%;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 3);
+            display: ;
+            justify-content: space-between;
+            padding: 20px 20px 40px;
+            border-radius: 10px;
+            transition: .3s;
+            margin-right: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .accessories2:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        }
+        
+        .image {
+            width: 100%;
+            height: 60%;
+            display: grid;
+            place-items: center;
+        }
+        
+        .image img {
+            width: 240px;
+        }
+        
+        .nameprice {
+            width: 100;
+        }
+        
+        .nameprice h3 {
+            font-size: 2em;
+            text-transform: capitalize;
+            color: var(--textcolor);
+        }
+        
+        .nameprice span {
+            font-size: 1.5em;
+            color: rgb(244, 133, 133);
+        }
+        
+        .buy {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+        
+        .buy button {
+            padding: 10px 20px;
+            border-radius: 7px;
+            border: none;
+            background-color: var(--textcolor);
+            color: var(--sectionback);
+            font-size: 18px;
+            cursor: pointer;
+            transition: .5s;
+        }
+        
+        .buy button:hover {
+            transform: scale(1.1);
+        }
+        
+        .background image {
+            color: black;
+        }
+        
+        .rutu:hover {
+            color: rgb(73, 72, 69);
+            width: 200px;
+            border-radius: 10px;
+        }
+        
+        .row {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .col-4 {
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+        
+        .col-4 img {
+            width: 400px;
+            height: 60%;
+            display: grid;
+            place-items: center;
+        }
+        
+        .row h4 {
+            font-size: 14px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-weight: 400;
+            transition: all 50s ease;
+        }
+        
+        .row h4 :hover {
+            color: var(--main-color);
+            cursor: pointer;
+        }
+        
+        .row h5 {
+            color: var(--other-color);
+            font-size: var(--p-font);
+            font-weight: 600;
+        }
+        
+        .footer {
+            background: #000;
+            color: #8a8a8a;
+            font-size: 15px;
+            padding: 60px 0 20px;
+        }
+        
+        .footer p {
+            color: #8a8a8a;
+        }
+        
+        .footer h3 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .footer-col-1,
+        .footer-col-2,
+        .footer-col-3,
+        .footer-col-4 {
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-col-1 {
+            flex-basis: 30%;
+        }
+        
+        .footer-col-2 {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .footer-col-2 img {
+            width: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-col-3,
+        .footer-col-4 {
+            flex-basis: 12%;
+            text-align: center;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        .footer hr {
+            border: none;
+            background: #b5b5b5;
+            height: 1px;
+            margin: 20px 0;
+        }
+        
+        .copyright {
+            text-align: center;
+        }
+        
+        .abc {
+            height: 200px;
+            width: 200px;
+        }
+        
+        .new {
+            display: flex;
+        }
+        
+        .a123 {
+            text-align: center;
+        }
+        
+        .new1 {
+            display: flex;
+        }
+        
+        .container {
+            display: flex;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="navbar">
+            <h1 class="rutu">Men's Watch</h1><br>
+
+            <a href="index.html">Watches </a>
+            <a href="Accessories.html">Accessories</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Account.html">Login</a>
+        </div>
+        <div class=" navbar-icons">
+            <a href="#"><i class='bx bx-shopping-bag'></i></a>
+            <a href="#"><i class='bx bx-heart'></i></a>
+            <div class='bx bx-menu' id="menu-icon"></div>
+        </div>
+    </header> <br><br><br>
+
+    <div class="container">
+
+        <div class="accessories2">
+            <div class="image">
+                <img src="New folder/handcuffs-toiletry.jpg" alt="" width="250" height="250">
+
+            </div><br><br>
+            <div class="nameprice">
+                <h3> Barcelet</h3>
+                <span>$ 15.99</span>
+            </div>
+            <div class="buy">
+                <button>Buy Now</button>
+            </div>
+
+
+        </div>
+        <div class="accessories2">
+            <div class="image">
+                <img src="New folder/Brown_Belt.webp" alt="" width="250" height="250">
+
+            </div><br><br>
+            <div class="nameprice">
+                <h3> Brown belt</h3>
+                <span>$ 85.99</span>
+            </div>
+            <div class="buy">
+                <button>Buy Now</button>
+            </div>
+
+
+        </div>
+        <div class="accessories2">
+            <div class="image">
+                <img src="New folder/IMG_1407.jpg" alt="" width="250" height="250">
+
+            </div><br><br>
+            <div class="nameprice">
+                <h3> Barcelet</h3>
+                <span>$ 78.99</span>
+            </div>
+            <div class="buy">
+                <button>Buy Now</button>
+            </div>
+
+
+        </div>
+
+
+    </div> <br><br><br><br><br><br><br><br>
+    <div class="container">
+
+        <div class="accessories2">
+            <div class="image">
+                <img src="New folder/images (1).jfif" alt="" width="250" height="250">
+
+            </div><br><br>
+            <div class="nameprice">
+                <h3> Barcelet</h3>
+                <span>$ 35.99</span>
+            </div>
+            <div class="buy">
+                <button>Buy Now</button>
+            </div>
+
+
+        </div>
+        <div class="accessories2">
+            <div class="image">
+                <img src="New folder/images (2).jfif" alt="" width="250" height="250">
+
+            </div><br><br>
+            <div class="nameprice">
+                <h3> Brown belt</h3>
+                <span>$ 85.99</span>
+            </div>
+            <div class="buy">
+                <button>Buy Now</button>
+            </div>
+
+
+        </div>
+        <div class="accessories2">
+            <div class="image">
+                <img src="New folder/images (3).jfif" alt="" width="250" height="250">
+
+            </div><br><br>
+            <div class="nameprice">
+                <h3> Barcelet</h3>
+                <span>$ 78.99</span>
+            </div>
+            <div class="buy">
+                <button>Buy Now</button>
+            </div>
+
+
+        </div>
+
+
+    </div> <br><br><br><br><br><br>
+    <!--footer-->
+
+    <div class="footer">
+        <div class="container ">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download app for Android And ios Mobile Phone.</p>
+                    <div class="app-logo">
+                        <img src="https://nextrade.com.hk/wp-content/uploads/2021/03/20200817-130219_orig-1024x519.png" width="250px">
+                    </div>
+                </div>
+                <p>our purpose is To sustenably make the pleasure and Benefits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="new1">
+
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - Easy Tutorials</p>
+        <br><br>
+    </div>
+
+    </div>
+
+
+    <!-- <div class="container">
+
+
+        <div class="accessories">
+            <div class="image">
+                <img src="IMG_1407.jpg" alt="" width="250" height="250">
+            </div>
+            <div class="nameprice">
+                <h3> Barcelet</h3>
+                <span>$ 15.99</span>
+            </div>
+            <div class="buy">
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="accessories">
+            <div class="image">
+                <img src="leather_passport_holder_2000x.jpg" alt="" width="250" height="250">
+            </div>
+            <div class="nameprice">
+                <h3> leather Passport Holder</h3>
+                <span>$70.99</span>
+            </div>
+            <div class="buy">
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="accessories">
+            <div class="image">
+                <img src="Brown_Belt_1_1024x1024_77e0afbf-adfc-4d1d-a398-18a03e00f7b9.webp" alt="" width="250" height="250">
+            </div>
+            <div class="nameprice">
+                <h3> Brown Belt</h3>
+                <span>$ 15.99</span>
+            </div>
+            <div class="buy">
+                <button>Buy Now</button>
+            </div>
+
+            <div class="accessories">
+                <div class="image">
+                    <img src="images (3).jfif" alt="" width="250" height="250">
+                </div>
+                <div class="nameprice">
+                    <h3> Breclet</h3>
+                    <span>$ 15.99</span>
+                </div>
+                <div class="buy">
+                    <button>Buy Now</button>
+                </div>
+
+                <div class="accessories">
+                    <div class="image">
+                        <img src="images (2).jfif" alt="" width="250" height="250">
+                    </div>
+                    <div class="nameprice">
+                        <h3> Barcelet</h3>
+                        <span>$15.99</span>
+                    </div>
+                    <div class="buy">
+                        <button>Buy Now</button>
+                    </div>
+
+                    <div class="accessories">
+                        <div class="image">
+                            <img src="ties-250x250.webp" alt="" width="250" height="250">
+                        </div>
+                        <div class="nameprice">
+                            <h3>Ties</h3>
+                            <span>$ 15.99</span>
+                        </div>
+                        <div class="buy">
+                            <button>Buy Now</button>
+                        </div>
+                        <div class="accessories">
+                            <div class="image">
+                                <img src="images (1).jfif" alt="" width="250" height="250">
+                            </div>
+                            <div class="nameprice">
+                                <h3> Barcelet</h3>
+                                <span>$15.99</span>
+                            </div>
+                            <div class="buy">
+                                <button>Buy Now</button>
+                            </div>
+
+
+
+
+
+
+                        </div> -->
+
+
+
+
+
+
+</body>
+
+</html>

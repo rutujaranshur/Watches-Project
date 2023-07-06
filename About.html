@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive About section</title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Dancing+Script:wght@400;500;600&family=Montserrat:ital,wght@0,500;0,600;0,800;1,500;1,600;1,700&
+family=Paytone+One&family=Poppins:ital,wght@0,400;0,500;0,700;0,800;0,900;1,700;1,800&family=Sriracha&display=swap" rel="stylesheet">
+    <style>
+        .brand {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+        
+        .brand .navbar {
+            margin-right: 3rem;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 2px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .brand .navbar a {
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            background: black;
+            margin: 0 30px;
+            padding: 0 10px;
+            border-radius: 20px;
+        }
+        
+        header .navbar a:hover {
+            color: azure;
+            background: black;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+            list-style: none;
+            text-decoration: none;
+            scroll-behavior: smooth;
+        }
+        
+        .body {
+            background-color: white;
+        }
+        
+        .headling {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 20px auto;
+        }
+        
+        .headling h1 {
+            font-size: 50px;
+            color: black;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .headling h2 {
+            display: flex;
+            margin: auto;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+        }
+        
+        .row {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .col-4 {
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+        
+        .col-4 img {
+            width: 400px;
+            height: 60%;
+            display: grid;
+            place-items: center;
+        }
+        
+        .row h4 {
+            font-size: 14px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-weight: 400;
+            transition: all 50s ease;
+        }
+        
+        .row h4 :hover {
+            color: var(--main-color);
+            cursor: pointer;
+        }
+        
+        .row h5 {
+            color: var(--other-color);
+            font-size: var(--p-font);
+            font-weight: 600;
+        }
+        
+        .footer {
+            background: #000;
+            color: #8a8a8a;
+            font-size: 15px;
+            padding: 60px 0 20px;
+        }
+        
+        .footer p {
+            color: #8a8a8a;
+        }
+        
+        .footer h3 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .footer-col-1,
+        .footer-col-2,
+        .footer-col-3,
+        .footer-col-4 {
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-col-1 {
+            flex-basis: 30%;
+        }
+        
+        .footer-col-2 {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .footer-col-2 img {
+            width: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-col-3,
+        .footer-col-4 {
+            flex-basis: 12%;
+            text-align: center;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        .footer hr {
+            border: none;
+            background: #b5b5b5;
+            height: 1px;
+            margin: 20px 0;
+        }
+        
+        .copyright {
+            text-align: center;
+        }
+        
+        .abc {
+            height: 200px;
+            width: 200px;
+        }
+        
+        .new {
+            display: flex;
+        }
+        
+        .a123 {
+            text-align: center;
+        }
+        
+        .new1 {
+            display: flex;
+        }
+        
+        .container {
+            display: flex;
+        }
+        
+        .card {
+            width: 400px;
+            margin-left: 50px;
+            text-align: center;
+        }
+        
+        .box {
+            border: 2px solid black;
+            height: 310px;
+            width: 700px;
+            padding-top: 40px;
+            border-radius: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            background-color: #c7c5c5;
+        }
+        
+        .box1 {
+            border: 2px solid black;
+            height: 100px;
+            width: 400px;
+            padding-top: 20px;
+            border-radius: 10px;
+            background-color: #c7c5c5;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <a href="background image.html" class="logo">Men's Watch </a>
+
+        <ul class="navbar">
+
+            <li><a href="index.html">Watches
+            </a></li>
+            <li><a href="Accessories.html">Accessories</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Account.html">Login</a></li>
+
+
+        </ul>
+        <div class="h-icons">
+            <a href="#"><i class='bx bx-shopping-bag'></i></a>
+            <a href="#"><i class='bx bx-heart' ></i></a>
+            <div class='bx bx-menu' id="menu-icon"></div>
+
+        </div>
+    </header><br><br><br><br><br>
+
+    <!--about section start-->
+
+
+    <div class=" headling">
+        <h1> MEN'S WATCH </h1>
+        <h2>
+            Buy Watches Online From Men's Watch- The Watch Store
+        </h2><br>
+        <p class="box">It is essential to keep track of time in today's fast-paced life. But you need to do it in style. Nothing beats the elegance of a stylish and functional wristwatch so that whenever you check the time, it becomes a fashionable affair. Watches are
+            also an emotional heirloom that is often passed down through generations as a treasured possession. They are the perfect accessory, especially when you want to keep your look minimal. On a casual day out, watches add just the right amount
+            of oomph to your outfit. They also make a great statement whether you are wearing ethnic, western, or dressy outfits. Every timepiece adds something spectacular to your ensemble.
+            <br><br> The Watch Store is all about celebrating the beauty and grandeur of these timeless pieces. We have every kind of watch you can dream of, from digital watches, analogue watches, chronograph watches to sports watches, luxury watches,
+            and premium watches. Our brand also houses some of the most popular international watch brands such as Calvin Klien, Seiko, TAG Heuer, Movado, Tissot and many others. Explore Men's Watch’ collection of branded luxury timepieces and buy watches
+            online.
+        </p> <br><br>
+
+        <h2>
+            FAQs About Men's Watch- The Watch Store.
+        </h2><br>
+        <p class="box1">
+            Men's Watch brand is a chain of watch stores by Titan Company Limited. It houses over 40+ international watch brands under one roof.
+        </p>
+
+    </div>
+
+
+    </header>
+
+
+
+
+    </nav>
+
+
+    <div class="footer">
+        <div class="container ">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download app for Android And ios Mobile Phone.</p>
+                    <div class="app-logo">
+                        <img src="https://nextrade.com.hk/wp-content/uploads/2021/03/20200817-130219_orig-1024x519.png" width="250px">
+                    </div>
+                </div>
+                <p>our purpose is To sustenably make the pleasure and Benefits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="new1">
+
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - Easy Tutorials</p>
+        <br><br><br><br>
+    </div>
+
+    </div>
+</body>
+
+</html>

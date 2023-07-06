@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background image</title>
+
+
+    <!--bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font awesome 5 CDN-->
+    <script>
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+    </script>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+        
+        .bgImage {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url(Chess-watch-ch-7.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            animation: bgChange 20s linear infinite;
+        }
+        
+        @keyframes bgChange {
+            10% {
+                background-image: url(Chess-watch-ch-7.jpg);
+            }
+            30% {
+                background-image: url(2015_300_1_05.jpg);
+            }
+            60% {
+                background-image: url(istockphoto-650233226-612x612.jpg);
+            }
+            80% {
+                background-image: url(Tissot-Swissmatic-FI.jpg);
+            }
+        }
+        
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        
+        .content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 2;
+            padding-bottom: 60px;
+        }
+        
+        .content h1 {
+            font-size: 80px;
+            margin-bottom: 60;
+        }
+        
+        .content h1 span {
+            color: black;
+        }
+        
+        .content button {
+            color: rgb(251, 250, 248);
+            border: none;
+            outline: none;
+            font-size: 14px;
+            background-color: rgb(58, 57, 56);
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border-radius: 25px;
+            transition: .5s;
+        }
+        
+        .content button:hover {
+            background-color: rgb(205, 205, 202);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bgImage">
+        <div class="overlay"> </div>
+        <div class="content">
+            <h1>
+                Men's<span>Watch</span>
+            </h1>
+            <a href="index.html" class="content button"> <button> Explore </button></a>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
